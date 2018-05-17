@@ -10,11 +10,15 @@
 		6A6EBF0F5309C93D269C61A5 /* Pods_ShuttleBusTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0124BEC6D65129FB28DA54C4 /* Pods_ShuttleBusTests.framework */; };
 		B4BD9D83673E8F1ACACF7820 /* Pods_ShuttleBus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4090C64177C3E1AA64D49F8E /* Pods_ShuttleBus.framework */; };
 		C11154E420AD52420035ACEB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11154E320AD52420035ACEB /* AppDelegate.swift */; };
-		C11154E620AD52420035ACEB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11154E520AD52420035ACEB /* ViewController.swift */; };
+		C11154E620AD52420035ACEB /* BusStopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11154E520AD52420035ACEB /* BusStopViewController.swift */; };
 		C11154E920AD52420035ACEB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C11154E720AD52420035ACEB /* Main.storyboard */; };
 		C11154EB20AD52430035ACEB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C11154EA20AD52430035ACEB /* Assets.xcassets */; };
 		C11154EE20AD52430035ACEB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C11154EC20AD52430035ACEB /* LaunchScreen.storyboard */; };
 		C11154F920AD52430035ACEB /* ShuttleBusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11154F820AD52430035ACEB /* ShuttleBusTests.swift */; };
+		C111550820AD552A0035ACEB /* BusStop.swift in Sources */ = {isa = PBXBuildFile; fileRef = C111550720AD552A0035ACEB /* BusStop.swift */; };
+		C111550A20AD56B50035ACEB /* BusStopsResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = C111550920AD56B50035ACEB /* BusStopsResult.swift */; };
+		C111550C20AD576D0035ACEB /* BusStopListAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C111550B20AD576D0035ACEB /* BusStopListAPI.swift */; };
+		C111550F20AD58B60035ACEB /* ShuttleBusAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C111550E20AD58B60035ACEB /* ShuttleBusAPI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,7 +39,7 @@
 		A35B46493B097A4CBD3FCA78 /* Pods-ShuttleBus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShuttleBus.release.xcconfig"; path = "Pods/Target Support Files/Pods-ShuttleBus/Pods-ShuttleBus.release.xcconfig"; sourceTree = "<group>"; };
 		C11154E020AD52420035ACEB /* ShuttleBus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShuttleBus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C11154E320AD52420035ACEB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C11154E520AD52420035ACEB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C11154E520AD52420035ACEB /* BusStopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusStopViewController.swift; sourceTree = "<group>"; };
 		C11154E820AD52420035ACEB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C11154EA20AD52430035ACEB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C11154ED20AD52430035ACEB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -43,6 +47,10 @@
 		C11154F420AD52430035ACEB /* ShuttleBusTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShuttleBusTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C11154F820AD52430035ACEB /* ShuttleBusTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShuttleBusTests.swift; sourceTree = "<group>"; };
 		C11154FA20AD52430035ACEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C111550720AD552A0035ACEB /* BusStop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusStop.swift; sourceTree = "<group>"; };
+		C111550920AD56B50035ACEB /* BusStopsResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusStopsResult.swift; sourceTree = "<group>"; };
+		C111550B20AD576D0035ACEB /* BusStopListAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusStopListAPI.swift; sourceTree = "<group>"; };
+		C111550E20AD58B60035ACEB /* ShuttleBusAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShuttleBusAPI.swift; sourceTree = "<group>"; };
 		E48581FC94F6675E4BD02744 /* Pods-ShuttleBus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShuttleBus.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ShuttleBus/Pods-ShuttleBus.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -109,11 +117,13 @@
 		C11154E220AD52420035ACEB /* ShuttleBus */ = {
 			isa = PBXGroup;
 			children = (
+				C111550D20AD58900035ACEB /* Network */,
+				C111550620AD54E10035ACEB /* StoryBoard */,
+				C111550520AD54C90035ACEB /* ViewController */,
+				C111550420AD54BE0035ACEB /* View */,
+				C111550320AD54B70035ACEB /* Model */,
 				C11154E320AD52420035ACEB /* AppDelegate.swift */,
-				C11154E520AD52420035ACEB /* ViewController.swift */,
-				C11154E720AD52420035ACEB /* Main.storyboard */,
 				C11154EA20AD52430035ACEB /* Assets.xcassets */,
-				C11154EC20AD52430035ACEB /* LaunchScreen.storyboard */,
 				C11154EF20AD52430035ACEB /* Info.plist */,
 			);
 			path = ShuttleBus;
@@ -126,6 +136,48 @@
 				C11154FA20AD52430035ACEB /* Info.plist */,
 			);
 			path = ShuttleBusTests;
+			sourceTree = "<group>";
+		};
+		C111550320AD54B70035ACEB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C111550720AD552A0035ACEB /* BusStop.swift */,
+				C111550920AD56B50035ACEB /* BusStopsResult.swift */,
+				C111550B20AD576D0035ACEB /* BusStopListAPI.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C111550420AD54BE0035ACEB /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C111550520AD54C90035ACEB /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C11154E520AD52420035ACEB /* BusStopViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		C111550620AD54E10035ACEB /* StoryBoard */ = {
+			isa = PBXGroup;
+			children = (
+				C11154E720AD52420035ACEB /* Main.storyboard */,
+				C11154EC20AD52430035ACEB /* LaunchScreen.storyboard */,
+			);
+			path = StoryBoard;
+			sourceTree = "<group>";
+		};
+		C111550D20AD58900035ACEB /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				C111550E20AD58B60035ACEB /* ShuttleBusAPI.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -293,7 +345,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C11154E620AD52420035ACEB /* ViewController.swift in Sources */,
+				C111550820AD552A0035ACEB /* BusStop.swift in Sources */,
+				C111550C20AD576D0035ACEB /* BusStopListAPI.swift in Sources */,
+				C111550F20AD58B60035ACEB /* ShuttleBusAPI.swift in Sources */,
+				C111550A20AD56B50035ACEB /* BusStopsResult.swift in Sources */,
+				C11154E620AD52420035ACEB /* BusStopViewController.swift in Sources */,
 				C11154E420AD52420035ACEB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -458,7 +514,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9T73B6L4GQ;
 				INFOPLIST_FILE = ShuttleBus/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.chozinul.ShuttleBus;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -474,7 +533,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9T73B6L4GQ;
 				INFOPLIST_FILE = ShuttleBus/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.chozinul.ShuttleBus;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -491,7 +553,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9T73B6L4GQ;
 				INFOPLIST_FILE = ShuttleBusTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.chozinul.ShuttleBusTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -509,7 +575,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9T73B6L4GQ;
 				INFOPLIST_FILE = ShuttleBusTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.chozinul.ShuttleBusTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
