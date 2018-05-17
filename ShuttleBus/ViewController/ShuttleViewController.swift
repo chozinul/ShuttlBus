@@ -8,23 +8,26 @@
 
 import UIKit
 
-class BusStopViewController: UIViewController {
+class ShuttleViewController: UIViewController {
     
     @IBOutlet weak var collectionView: UICollectionView!
     
-    fileprivate var busStops = [BusStop]()
-    fileprivate let reuseIdentifier = "BusStopCollectionViewCell"
+    var busStop:BusStop!
+    var selectedShuttle:Shuttle?
+    
+    fileprivate var shuttles = [Shuttle]()
+    fileprivate let reuseIdentifier = "ShuttleCollectionViewCell"
     fileprivate let sectionInsets = UIEdgeInsets(top: 1.0, left: 1.0, bottom: 1.0, right: 1.0)
     fileprivate let itemsPerRow: CGFloat = 1
-    fileprivate var selectedBusStop:BusStop?
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        ShuttleBusAPI.GetBusStop(completion: {
-            [unowned self] (busStopListAPI)  in
-            if let busStops = busStopListAPI?.busStopsResult?.busStops {
-                self.busStops = busStops
+        ShuttleBusAPI.GetShuttleStop(bustStop: busStop.name!, completion: {
+            [unowned self] (shuttleServiceListAPI)  in
+            if let shuttles = shuttleServiceListAPI?.shuttleServiceResult?.shuttles {
+                self.shuttles = shuttles
                 self.collectionView.reloadData()
             }
         })
@@ -38,32 +41,29 @@ class BusStopViewController: UIViewController {
 }
 
 // MARK: - UICollectionViewDelegate
-extension BusStopViewController : UICollectionViewDelegate {
+extension ShuttleViewController : UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView,
                         didSelectItemAt indexPath: IndexPath){
-        selectedBusStop = busStops[indexPath.row];
-        performSegue(withIdentifier: "ShuttleViewController", sender: self);
-    }
-    
-    // MARK: - Navigation
-    
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
         
-        if segue.identifier == "ShuttleViewController"
-        {
-            let controller = segue.destination as! ShuttleViewController
-            controller.busStop = selectedBusStop
+        let shuttle = shuttles[indexPath.row];
+        if let name = shuttle.name {
+//            ShuttleBusAPI.GetShuttleStop(bustStop: name, completion: {
+//                [unowned self] (shuttleServiceListAPI)  in
+//                if let shuttles =  shuttleServiceListAPI?.shuttleServiceResult?.shuttles {
+//                    print("successfull")
+//                }
+//            })
         }
         
     }
     
+    
+
+ 
 }
 
 // MARK: - UICollectionViewDataSource
-extension BusStopViewController: UICollectionViewDataSource {
+extension ShuttleViewController: UICollectionViewDataSource {
     //1
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
@@ -72,25 +72,27 @@ extension BusStopViewController: UICollectionViewDataSource {
     //2
     func collectionView(_ collectionView: UICollectionView,
                         numberOfItemsInSection section: Int) -> Int {
-        return busStops.count
+        return shuttles.count
     }
     
     //3
     func collectionView(_ collectionView: UICollectionView,
                         cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier,
-                                                      for: indexPath) as! BusStopCollectionViewCell
+                                                      for: indexPath) as! ShuttleCollectionViewCell
         
-        let busStop = busStops[indexPath.row]
+        let shuttle = shuttles[indexPath.row]
         cell.thumbnail.image = UIImage(named: "bus_stop")
         cell.rightArrow.image = UIImage(named: "right_arrow")
-        cell.title.text = busStop.caption
+        cell.title.text = shuttle.name
+        cell.arrival.text = "Arrival: " + shuttle.arrivalTime!
+        cell.nextArrival.text = "Next Arrival: " + shuttle.nextArrivalTime!
         return cell
     }
 }
 
 // MARK: - UICollectionViewDelegateFlowLayout
-extension BusStopViewController : UICollectionViewDelegateFlowLayout {
+extension ShuttleViewController : UICollectionViewDelegateFlowLayout {
     //1
     func collectionView(_ collectionView: UICollectionView,
                         layout collectionViewLayout: UICollectionViewLayout,
@@ -100,7 +102,7 @@ extension BusStopViewController : UICollectionViewDelegateFlowLayout {
         let availableWidth = view.frame.width - paddingSpace
         let widthPerItem = availableWidth / itemsPerRow
         
-        return CGSize(width: widthPerItem, height: 70)
+        return CGSize(width: widthPerItem, height: 110)
     }
     
     //3

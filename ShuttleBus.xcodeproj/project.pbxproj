@@ -20,6 +20,11 @@
 		C111550C20AD576D0035ACEB /* BusStopListAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C111550B20AD576D0035ACEB /* BusStopListAPI.swift */; };
 		C111550F20AD58B60035ACEB /* ShuttleBusAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C111550E20AD58B60035ACEB /* ShuttleBusAPI.swift */; };
 		C111551120AD5DD70035ACEB /* BusStopCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C111551020AD5DD70035ACEB /* BusStopCollectionViewCell.swift */; };
+		C111551520AD8E260035ACEB /* Shuttle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C111551420AD8E260035ACEB /* Shuttle.swift */; };
+		C111551720AD90150035ACEB /* ShuttleServiceResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = C111551620AD90150035ACEB /* ShuttleServiceResult.swift */; };
+		C111551920AD91830035ACEB /* ShuttleServiceListAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C111551820AD91830035ACEB /* ShuttleServiceListAPI.swift */; };
+		C111551B20ADA17B0035ACEB /* ShuttleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C111551A20ADA17B0035ACEB /* ShuttleCollectionViewCell.swift */; };
+		C111551D20ADA4050035ACEB /* ShuttleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C111551C20ADA4050035ACEB /* ShuttleViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +58,11 @@
 		C111550B20AD576D0035ACEB /* BusStopListAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusStopListAPI.swift; sourceTree = "<group>"; };
 		C111550E20AD58B60035ACEB /* ShuttleBusAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShuttleBusAPI.swift; sourceTree = "<group>"; };
 		C111551020AD5DD70035ACEB /* BusStopCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusStopCollectionViewCell.swift; sourceTree = "<group>"; };
+		C111551420AD8E260035ACEB /* Shuttle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shuttle.swift; sourceTree = "<group>"; };
+		C111551620AD90150035ACEB /* ShuttleServiceResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShuttleServiceResult.swift; sourceTree = "<group>"; };
+		C111551820AD91830035ACEB /* ShuttleServiceListAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShuttleServiceListAPI.swift; sourceTree = "<group>"; };
+		C111551A20ADA17B0035ACEB /* ShuttleCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShuttleCollectionViewCell.swift; sourceTree = "<group>"; };
+		C111551C20ADA4050035ACEB /* ShuttleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShuttleViewController.swift; sourceTree = "<group>"; };
 		E48581FC94F6675E4BD02744 /* Pods-ShuttleBus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShuttleBus.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ShuttleBus/Pods-ShuttleBus.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -146,6 +156,9 @@
 				C111550720AD552A0035ACEB /* BusStop.swift */,
 				C111550920AD56B50035ACEB /* BusStopsResult.swift */,
 				C111550B20AD576D0035ACEB /* BusStopListAPI.swift */,
+				C111551420AD8E260035ACEB /* Shuttle.swift */,
+				C111551620AD90150035ACEB /* ShuttleServiceResult.swift */,
+				C111551820AD91830035ACEB /* ShuttleServiceListAPI.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -154,6 +167,7 @@
 			isa = PBXGroup;
 			children = (
 				C111551020AD5DD70035ACEB /* BusStopCollectionViewCell.swift */,
+				C111551A20ADA17B0035ACEB /* ShuttleCollectionViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -162,6 +176,7 @@
 			isa = PBXGroup;
 			children = (
 				C11154E520AD52420035ACEB /* BusStopViewController.swift */,
+				C111551C20ADA4050035ACEB /* ShuttleViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -348,9 +363,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C111551920AD91830035ACEB /* ShuttleServiceListAPI.swift in Sources */,
 				C111550820AD552A0035ACEB /* BusStop.swift in Sources */,
+				C111551D20ADA4050035ACEB /* ShuttleViewController.swift in Sources */,
+				C111551B20ADA17B0035ACEB /* ShuttleCollectionViewCell.swift in Sources */,
+				C111551520AD8E260035ACEB /* Shuttle.swift in Sources */,
 				C111551120AD5DD70035ACEB /* BusStopCollectionViewCell.swift in Sources */,
 				C111550C20AD576D0035ACEB /* BusStopListAPI.swift in Sources */,
+				C111551720AD90150035ACEB /* ShuttleServiceResult.swift in Sources */,
 				C111550F20AD58B60035ACEB /* ShuttleBusAPI.swift in Sources */,
 				C111550A20AD56B50035ACEB /* BusStopsResult.swift in Sources */,
 				C11154E620AD52420035ACEB /* BusStopViewController.swift in Sources */,

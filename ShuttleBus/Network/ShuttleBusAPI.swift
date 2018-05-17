@@ -29,4 +29,19 @@ class ShuttleBusAPI: NSObject {
         }
     }
     
+    static func GetShuttleStop(bustStop:String, completion:((ShuttleServiceListAPI?)->())?) {
+        
+        let URL = baseURL + "/shuttleservice"
+        let parameters: Parameters = ["busstopname":bustStop]
+        
+        Alamofire.request(URL,
+                          method: .get,
+                          parameters: parameters,
+                          encoding: URLEncoding(destination: .queryString),
+                          headers: ["accept": "application/json"]).responseObject { (response: DataResponse<ShuttleServiceListAPI>) in
+                            let shuttleList = response.result.value
+                            completion?(shuttleList);
+        }
+    }
+    
 }
