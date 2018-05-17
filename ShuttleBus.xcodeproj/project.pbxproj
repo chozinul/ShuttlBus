@@ -19,6 +19,7 @@
 		C111550A20AD56B50035ACEB /* BusStopsResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = C111550920AD56B50035ACEB /* BusStopsResult.swift */; };
 		C111550C20AD576D0035ACEB /* BusStopListAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C111550B20AD576D0035ACEB /* BusStopListAPI.swift */; };
 		C111550F20AD58B60035ACEB /* ShuttleBusAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C111550E20AD58B60035ACEB /* ShuttleBusAPI.swift */; };
+		C111551120AD5DD70035ACEB /* BusStopCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C111551020AD5DD70035ACEB /* BusStopCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		C111550920AD56B50035ACEB /* BusStopsResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusStopsResult.swift; sourceTree = "<group>"; };
 		C111550B20AD576D0035ACEB /* BusStopListAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusStopListAPI.swift; sourceTree = "<group>"; };
 		C111550E20AD58B60035ACEB /* ShuttleBusAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShuttleBusAPI.swift; sourceTree = "<group>"; };
+		C111551020AD5DD70035ACEB /* BusStopCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusStopCollectionViewCell.swift; sourceTree = "<group>"; };
 		E48581FC94F6675E4BD02744 /* Pods-ShuttleBus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShuttleBus.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ShuttleBus/Pods-ShuttleBus.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -151,6 +153,7 @@
 		C111550420AD54BE0035ACEB /* View */ = {
 			isa = PBXGroup;
 			children = (
+				C111551020AD5DD70035ACEB /* BusStopCollectionViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -346,6 +349,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C111550820AD552A0035ACEB /* BusStop.swift in Sources */,
+				C111551120AD5DD70035ACEB /* BusStopCollectionViewCell.swift in Sources */,
 				C111550C20AD576D0035ACEB /* BusStopListAPI.swift in Sources */,
 				C111550F20AD58B60035ACEB /* ShuttleBusAPI.swift in Sources */,
 				C111550A20AD56B50035ACEB /* BusStopsResult.swift in Sources */,
