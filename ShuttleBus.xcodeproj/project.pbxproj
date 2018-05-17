@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6A6EBF0F5309C93D269C61A5 /* Pods_ShuttleBusTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0124BEC6D65129FB28DA54C4 /* Pods_ShuttleBusTests.framework */; };
+		B4BD9D83673E8F1ACACF7820 /* Pods_ShuttleBus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4090C64177C3E1AA64D49F8E /* Pods_ShuttleBus.framework */; };
 		C11154E420AD52420035ACEB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11154E320AD52420035ACEB /* AppDelegate.swift */; };
 		C11154E620AD52420035ACEB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11154E520AD52420035ACEB /* ViewController.swift */; };
 		C11154E920AD52420035ACEB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C11154E720AD52420035ACEB /* Main.storyboard */; };
@@ -26,6 +28,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0124BEC6D65129FB28DA54C4 /* Pods_ShuttleBusTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShuttleBusTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4090C64177C3E1AA64D49F8E /* Pods_ShuttleBus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShuttleBus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A78A1D1D8D8FB8C877FAC75 /* Pods-ShuttleBusTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShuttleBusTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ShuttleBusTests/Pods-ShuttleBusTests.debug.xcconfig"; sourceTree = "<group>"; };
+		61677AF236F2B41AA7B36CDD /* Pods-ShuttleBusTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShuttleBusTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ShuttleBusTests/Pods-ShuttleBusTests.release.xcconfig"; sourceTree = "<group>"; };
+		A35B46493B097A4CBD3FCA78 /* Pods-ShuttleBus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShuttleBus.release.xcconfig"; path = "Pods/Target Support Files/Pods-ShuttleBus/Pods-ShuttleBus.release.xcconfig"; sourceTree = "<group>"; };
 		C11154E020AD52420035ACEB /* ShuttleBus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShuttleBus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C11154E320AD52420035ACEB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C11154E520AD52420035ACEB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -36,6 +43,7 @@
 		C11154F420AD52430035ACEB /* ShuttleBusTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShuttleBusTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C11154F820AD52430035ACEB /* ShuttleBusTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShuttleBusTests.swift; sourceTree = "<group>"; };
 		C11154FA20AD52430035ACEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E48581FC94F6675E4BD02744 /* Pods-ShuttleBus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShuttleBus.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ShuttleBus/Pods-ShuttleBus.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4BD9D83673E8F1ACACF7820 /* Pods_ShuttleBus.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,18 +59,41 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A6EBF0F5309C93D269C61A5 /* Pods_ShuttleBusTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		063F3F0F6555381DBF3015B3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4090C64177C3E1AA64D49F8E /* Pods_ShuttleBus.framework */,
+				0124BEC6D65129FB28DA54C4 /* Pods_ShuttleBusTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A267D2EA74DDCEE26B7E975F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E48581FC94F6675E4BD02744 /* Pods-ShuttleBus.debug.xcconfig */,
+				A35B46493B097A4CBD3FCA78 /* Pods-ShuttleBus.release.xcconfig */,
+				4A78A1D1D8D8FB8C877FAC75 /* Pods-ShuttleBusTests.debug.xcconfig */,
+				61677AF236F2B41AA7B36CDD /* Pods-ShuttleBusTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		C11154D720AD52420035ACEB = {
 			isa = PBXGroup;
 			children = (
 				C11154E220AD52420035ACEB /* ShuttleBus */,
 				C11154F720AD52430035ACEB /* ShuttleBusTests */,
 				C11154E120AD52420035ACEB /* Products */,
+				A267D2EA74DDCEE26B7E975F /* Pods */,
+				063F3F0F6555381DBF3015B3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,9 +135,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C11154FD20AD52430035ACEB /* Build configuration list for PBXNativeTarget "ShuttleBus" */;
 			buildPhases = (
+				EAC01E410CC36F84A6275F28 /* [CP] Check Pods Manifest.lock */,
 				C11154DC20AD52420035ACEB /* Sources */,
 				C11154DD20AD52420035ACEB /* Frameworks */,
 				C11154DE20AD52420035ACEB /* Resources */,
+				43AD710F71F5DCAFFC97754F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -120,6 +154,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C111550020AD52430035ACEB /* Build configuration list for PBXNativeTarget "ShuttleBusTests" */;
 			buildPhases = (
+				1528E3F7BF3E876DB66189A1 /* [CP] Check Pods Manifest.lock */,
 				C11154F020AD52430035ACEB /* Sources */,
 				C11154F120AD52430035ACEB /* Frameworks */,
 				C11154F220AD52430035ACEB /* Resources */,
@@ -191,6 +226,67 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1528E3F7BF3E876DB66189A1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ShuttleBusTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		43AD710F71F5DCAFFC97754F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ShuttleBus/Pods-ShuttleBus-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireObjectMapper/AlamofireObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ShuttleBus/Pods-ShuttleBus-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EAC01E410CC36F84A6275F28 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ShuttleBus-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C11154DC20AD52420035ACEB /* Sources */ = {
@@ -356,15 +452,13 @@
 		};
 		C11154FE20AD52430035ACEB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E48581FC94F6675E4BD02744 /* Pods-ShuttleBus.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9T73B6L4GQ;
 				INFOPLIST_FILE = ShuttleBus/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.chozinul.ShuttleBus;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -374,15 +468,13 @@
 		};
 		C11154FF20AD52430035ACEB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A35B46493B097A4CBD3FCA78 /* Pods-ShuttleBus.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9T73B6L4GQ;
 				INFOPLIST_FILE = ShuttleBus/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.chozinul.ShuttleBus;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -392,17 +484,14 @@
 		};
 		C111550120AD52430035ACEB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A78A1D1D8D8FB8C877FAC75 /* Pods-ShuttleBusTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9T73B6L4GQ;
 				INFOPLIST_FILE = ShuttleBusTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.chozinul.ShuttleBusTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -413,17 +502,14 @@
 		};
 		C111550220AD52430035ACEB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61677AF236F2B41AA7B36CDD /* Pods-ShuttleBusTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9T73B6L4GQ;
 				INFOPLIST_FILE = ShuttleBusTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.chozinul.ShuttleBusTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
