@@ -128,11 +128,41 @@
                     <navigationItem key="navigationItem" title="Shuttle" id="kbC-46-CvQ"/>
                     <connections>
                         <outlet property="collectionView" destination="OgY-PD-0jg" id="7en-DV-XYt"/>
+                        <segue destination="JV9-46-6rg" kind="show" identifier="MapViewController" id="Rs9-l6-tLk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1241" y="-64"/>
+        </scene>
+        <!--Map View Controller-->
+        <scene sceneID="fYA-kY-s1e">
+            <objects>
+                <viewController id="JV9-46-6rg" customClass="MapViewController" customModule="ShuttleBus" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="X5Z-4T-nvW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="dYV-VS-iUX">
+                                <rect key="frame" x="0.0" y="64" width="381" height="603"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="dYV-VS-iUX" firstAttribute="trailing" secondItem="NMe-my-xRl" secondAttribute="trailing" constant="6" id="1bH-wp-VVO"/>
+                            <constraint firstItem="dYV-VS-iUX" firstAttribute="top" secondItem="NMe-my-xRl" secondAttribute="top" id="5Cg-pt-JW9"/>
+                            <constraint firstItem="NMe-my-xRl" firstAttribute="bottom" secondItem="dYV-VS-iUX" secondAttribute="bottom" id="fgR-Cb-Qwr"/>
+                            <constraint firstItem="dYV-VS-iUX" firstAttribute="leading" secondItem="NMe-my-xRl" secondAttribute="leading" id="iaq-GD-Ft4"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="NMe-my-xRl"/>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="dYV-VS-iUX" id="Kx4-CP-U66"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qTJ-V2-f0d" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2036" y="-64.31784107946028"/>
         </scene>
         <!--Bus Stop-->
         <scene sceneID="9Pf-fG-ANc">

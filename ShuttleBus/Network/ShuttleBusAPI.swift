@@ -44,4 +44,19 @@ class ShuttleBusAPI: NSObject {
         }
     }
     
+    static func GetShuttles(shuttle:String, completion:((ActiveBusListAPI?)->())?) {
+        
+        let URL = baseURL + "/activebus"
+        let parameters: Parameters = ["route_code":shuttle,
+                                      "token":"CNtwrAuU2m5WP4TZVDDs"]
+        Alamofire.request(URL,
+                          method: .get,
+                          parameters: parameters,
+                          encoding: URLEncoding(destination: .queryString),
+                          headers: ["accept": "application/json"]).responseObject { (response: DataResponse<ActiveBusListAPI>) in
+                            let shuttleList = response.result.value
+                            completion?(shuttleList);
+        }
+    }
+    
 }

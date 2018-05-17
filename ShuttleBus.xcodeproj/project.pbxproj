@@ -25,6 +25,11 @@
 		C111551920AD91830035ACEB /* ShuttleServiceListAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C111551820AD91830035ACEB /* ShuttleServiceListAPI.swift */; };
 		C111551B20ADA17B0035ACEB /* ShuttleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C111551A20ADA17B0035ACEB /* ShuttleCollectionViewCell.swift */; };
 		C111551D20ADA4050035ACEB /* ShuttleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C111551C20ADA4050035ACEB /* ShuttleViewController.swift */; };
+		C111552120ADB4450035ACEB /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C111552020ADB4450035ACEB /* MapViewController.swift */; };
+		C111552520ADB9810035ACEB /* AnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C111552320ADB9810035ACEB /* AnnotationView.swift */; };
+		C111552720ADBD1B0035ACEB /* ActiveBus.swift in Sources */ = {isa = PBXBuildFile; fileRef = C111552620ADBD1B0035ACEB /* ActiveBus.swift */; };
+		C111552920ADBDF90035ACEB /* ActiveBusResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = C111552820ADBDF90035ACEB /* ActiveBusResult.swift */; };
+		C111552B20ADBE870035ACEB /* ActiveBusListAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C111552A20ADBE870035ACEB /* ActiveBusListAPI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +68,11 @@
 		C111551820AD91830035ACEB /* ShuttleServiceListAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShuttleServiceListAPI.swift; sourceTree = "<group>"; };
 		C111551A20ADA17B0035ACEB /* ShuttleCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShuttleCollectionViewCell.swift; sourceTree = "<group>"; };
 		C111551C20ADA4050035ACEB /* ShuttleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShuttleViewController.swift; sourceTree = "<group>"; };
+		C111552020ADB4450035ACEB /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		C111552320ADB9810035ACEB /* AnnotationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnnotationView.swift; sourceTree = "<group>"; };
+		C111552620ADBD1B0035ACEB /* ActiveBus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveBus.swift; sourceTree = "<group>"; };
+		C111552820ADBDF90035ACEB /* ActiveBusResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveBusResult.swift; sourceTree = "<group>"; };
+		C111552A20ADBE870035ACEB /* ActiveBusListAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveBusListAPI.swift; sourceTree = "<group>"; };
 		E48581FC94F6675E4BD02744 /* Pods-ShuttleBus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShuttleBus.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ShuttleBus/Pods-ShuttleBus.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -159,6 +169,9 @@
 				C111551420AD8E260035ACEB /* Shuttle.swift */,
 				C111551620AD90150035ACEB /* ShuttleServiceResult.swift */,
 				C111551820AD91830035ACEB /* ShuttleServiceListAPI.swift */,
+				C111552620ADBD1B0035ACEB /* ActiveBus.swift */,
+				C111552820ADBDF90035ACEB /* ActiveBusResult.swift */,
+				C111552A20ADBE870035ACEB /* ActiveBusListAPI.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -168,6 +181,7 @@
 			children = (
 				C111551020AD5DD70035ACEB /* BusStopCollectionViewCell.swift */,
 				C111551A20ADA17B0035ACEB /* ShuttleCollectionViewCell.swift */,
+				C111552320ADB9810035ACEB /* AnnotationView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -177,6 +191,7 @@
 			children = (
 				C11154E520AD52420035ACEB /* BusStopViewController.swift */,
 				C111551C20ADA4050035ACEB /* ShuttleViewController.swift */,
+				C111552020ADB4450035ACEB /* MapViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -363,16 +378,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C111552720ADBD1B0035ACEB /* ActiveBus.swift in Sources */,
 				C111551920AD91830035ACEB /* ShuttleServiceListAPI.swift in Sources */,
 				C111550820AD552A0035ACEB /* BusStop.swift in Sources */,
 				C111551D20ADA4050035ACEB /* ShuttleViewController.swift in Sources */,
+				C111552B20ADBE870035ACEB /* ActiveBusListAPI.swift in Sources */,
+				C111552920ADBDF90035ACEB /* ActiveBusResult.swift in Sources */,
 				C111551B20ADA17B0035ACEB /* ShuttleCollectionViewCell.swift in Sources */,
 				C111551520AD8E260035ACEB /* Shuttle.swift in Sources */,
 				C111551120AD5DD70035ACEB /* BusStopCollectionViewCell.swift in Sources */,
+				C111552120ADB4450035ACEB /* MapViewController.swift in Sources */,
 				C111550C20AD576D0035ACEB /* BusStopListAPI.swift in Sources */,
 				C111551720AD90150035ACEB /* ShuttleServiceResult.swift in Sources */,
 				C111550F20AD58B60035ACEB /* ShuttleBusAPI.swift in Sources */,
 				C111550A20AD56B50035ACEB /* BusStopsResult.swift in Sources */,
+				C111552520ADB9810035ACEB /* AnnotationView.swift in Sources */,
 				C11154E620AD52420035ACEB /* BusStopViewController.swift in Sources */,
 				C11154E420AD52420035ACEB /* AppDelegate.swift in Sources */,
 			);
@@ -536,13 +556,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9T73B6L4GQ;
+				DEVELOPMENT_TEAM = FARWN7FEXX;
 				INFOPLIST_FILE = ShuttleBus/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.chozinul.ShuttleBus;
+				PRODUCT_BUNDLE_IDENTIFIER = com.chozinul.test001;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -555,13 +575,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9T73B6L4GQ;
+				DEVELOPMENT_TEAM = FARWN7FEXX;
 				INFOPLIST_FILE = ShuttleBus/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.chozinul.ShuttleBus;
+				PRODUCT_BUNDLE_IDENTIFIER = com.chozinul.test001;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
