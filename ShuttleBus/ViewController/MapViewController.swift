@@ -23,6 +23,8 @@ class MapViewController: UIViewController, MKMapViewDelegate {
     
     let locationManager = CLLocationManager()
     var currentLocation:CLLocationCoordinate2D?
+    let refreshRate = 5.0
+    var timer:Timer?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,16 +32,8 @@ class MapViewController: UIViewController, MKMapViewDelegate {
         // Do any additional setup after loading the view.
         
         initUI()
-        
-        
-        ShuttleBusAPI.GetShuttles(shuttle: shuttle.name!, completion: {
-            [weak self] (activeBusListAPI)  in
-            if let busses = activeBusListAPI?.activeBusResult?.activeBuses, busses.count > 0 {
-                self?.activeBusses = busses
-                self?.centerMapOnLocation(location: CLLocationCoordinate2D(latitude: (busses.first?.lat)!, longitude: (busses.first?.lng)!))
-                self?.refreshMap()
-            }
-        })
+        refreshMapAnnotation()
+        timer = Timer.scheduledTimer(timeInterval: refreshRate, target: self, selector: #selector(refreshMapAnnotation), userInfo: nil, repeats: true)
         
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
         locationManager.delegate = self
@@ -47,6 +41,10 @@ class MapViewController: UIViewController, MKMapViewDelegate {
         locationManager.requestLocation()
     }
 
+    deinit {
+        timer?.invalidate()
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -57,6 +55,20 @@ class MapViewController: UIViewController, MKMapViewDelegate {
     func initUI() {
         centerMapOnLocation(location: singaporeCenter.coordinate)
         mapView.delegate = self
+    }
+    
+    //refreshMapAnnotation
+    @objc func refreshMapAnnotation(){
+        ShuttleBusAPI.GetShuttles(shuttle: shuttle.name!, completion: {
+            [weak self] (activeBusListAPI)  in
+            if let busses = activeBusListAPI?.activeBusResult?.activeBuses, busses.count > 0 {
+                self?.activeBusses = busses
+                if self?.currentLocation == nil {
+                    self?.centerMapOnLocation(location: CLLocationCoordinate2D(latitude: (busses.first?.lat)!, longitude: (busses.first?.lng)!))
+                }
+                self?.refreshMap()
+            }
+        })
     }
     
     //center map
@@ -77,7 +89,6 @@ class MapViewController: UIViewController, MKMapViewDelegate {
             point.coordinate = currentLocation
             mapView.addAnnotation(point)
             annotationList.append(point)
-            centerMapOnLocation(location: currentLocation)
         }
         
         for bus in activeBusses {
@@ -128,7 +139,12 @@ class MapViewController: UIViewController, MKMapViewDelegate {
 extension MapViewController: CLLocationManagerDelegate {
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         if let _ = locations.last?.coordinate.latitude, let _ = locations.last?.coordinate.longitude {
-            currentLocation = locations.last?.coordinate
+            if currentLocation != nil {
+                currentLocation = locations.last?.coordinate
+            }else{
+                currentLocation = locations.last?.coordinate
+                centerMapOnLocation(location: currentLocation!)
+            }
             self.refreshMap()
         } else {
             print("No coordinates")
